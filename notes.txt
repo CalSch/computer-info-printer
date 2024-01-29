@@ -1,0 +1,20 @@
+commands:
+df -hT
+column -t -s : /etc/passwd
+free
+lscpu
+hostname
+ifconfig / ip ad
+
+files:
+/etc/fstab
+/etc/group
+/etc/hostname
+/etc/issue
+
+things:
+run all users through `id`
+
+users:
+find "important" users (do they have a shell)
+print info about them

@@ -1,0 +1,241 @@
+<style>
+    * {
+        overflow-x: hidden;
+        word-wrap: anywhere;
+        border-spacing: 0;
+    }
+    body {
+        font-size: 9pt;
+        font-family: monospace;
+        width: 384px;
+    }
+    div.box {
+        border: 1px solid black;
+        margin-bottom: 5px;
+        padding: 2px;
+    }
+    pre {
+        white-space: pre-wrap;       /* css-3 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        margin: 0;
+    }
+    h1 {
+        margin: 0;
+    }
+    td, th {
+        font-size: 9pt;
+        border: 1px solid black;
+        border-top: none;
+        border-left: none;
+        margin: 0;
+    }
+    th {
+        padding: 0 2px 0 2px;
+        background-color: #eee;
+    }
+    h1.center {
+        width: 100%;
+        text-align: center;
+    }
+</style>
+<h1 class="center">Computer Info Report</h1>
+<hr>
+<div class="box">
+    <h1>uname -a</h1>
+    <pre>Linux flex2a 6.2.0-39-generic #40-Ubuntu SMP PREEMPT_DYNAMIC Tue Nov 14 14:18:00 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux</pre>
+</div>
+<div class="box">
+    <h1>Disks</h1>
+    <table>
+	<tr>
+		<th>Filesystem</th>
+		<th>Type</th>
+		<th>Size</th>
+		<th>Used</th>
+		<th>Avail</th>
+		<th>Use%</th>
+		<th>Mounted_on</th>
+	</tr>
+	<tr>
+		<td>/dev/nvme0n1p5</td>
+		<td>ext4</td>
+		<td>126G</td>
+		<td>81G</td>
+		<td>39G</td>
+		<td>68%</td>
+		<td>/</td>
+	</tr>
+	<tr>
+		<td>/dev/nvme0n1p1</td>
+		<td>vfat</td>
+		<td>101M</td>
+		<td>42M</td>
+		<td>60M</td>
+		<td>42%</td>
+		<td>/boot/efi</td>
+	</tr>
+</table>
+
+</div>
+<div class="box">
+    <h1>RAM</h1>
+    <pre><table>
+	<tr>
+		<th></th>
+		<th>total</th>
+		<th>used</th>
+		<th>free</th>
+		<th>shared</th>
+		<th>buff/cache</th>
+		<th>available</th>
+	</tr>
+	<tr>
+		<td>Mem:</td>
+		<td>8.0G</td>
+		<td>7.7G</td>
+		<td>163M</td>
+		<td>1.8G</td>
+		<td>2.3G</td>
+		<td>312M</td>
+	</tr>
+	<tr>
+		<td>Swap:</td>
+		<td>2.1G</td>
+		<td>2.1G</td>
+		<td>0B</td>
+	</tr>
+</table>
+</pre>
+</div>
+<div class="box">
+    <h1>CPUs</h1>
+    <pre><table>
+	<tr>
+		<td>Architecture:</td>
+		<td>x86_64</td>
+	</tr>
+	<tr>
+		<td>CPU op-mode(s):</td>
+		<td>32-bit, 64-bit</td>
+	</tr>
+	<tr>
+		<td>Address sizes:</td>
+		<td>39 bits physical, 48 bits virtual</td>
+	</tr>
+	<tr>
+		<td>Byte Order:</td>
+		<td>Little Endian</td>
+	</tr>
+	<tr>
+		<td>CPU(s):</td>
+		<td>8</td>
+	</tr>
+	<tr>
+		<td>On-line CPU(s) list:</td>
+		<td>0-7</td>
+	</tr>
+	<tr>
+		<td>Vendor ID:</td>
+		<td>GenuineIntel</td>
+	</tr>
+	<tr>
+		<td>Model name:</td>
+		<td>11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz</td>
+	</tr>
+	<tr>
+		<td>CPU family:</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td>Model:</td>
+		<td>140</td>
+	</tr>
+	<tr>
+		<td>Thread(s) per core:</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>Core(s) per socket:</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>Socket(s):</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Stepping:</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>CPU(s) scaling MHz:</td>
+		<td>67%</td>
+	</tr>
+	<tr>
+		<td>CPU max MHz:</td>
+		<td>4200.0000</td>
+	</tr>
+	<tr>
+		<td>CPU min MHz:</td>
+		<td>400.0000</td>
+	</tr>
+	<tr>
+		<td>BogoMIPS:</td>
+		<td>4838.40</td>
+	</tr>
+	<tr>
+		<td>Virtualization:</td>
+		<td>VT-x</td>
+	</tr>
+</table>
+</pre>
+</div>
+<div class="box">
+    <h1>USBs</h1>
+    <pre>Bus 004 Device 001:
+  ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 004:
+  ID 2b7e:0134 Generic 720p HD Camera
+Bus 003 Device 003:
+  ID 04e8:730b Samsung Electronics Co., Ltd Fingerprint Sensor Device - 730B
+Bus 003 Device 006:
+  ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 003 Device 005:
+  ID 8087:0026 Intel Corp. AX201 Bluetooth
+Bus 003 Device 001:
+  ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001:
+  ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001:
+  ID 1d6b:0002 Linux Foundation 2.0 root hub</pre>
+</div>
+<div class="box">
+    <h1>Users</h1>
+    <pre>root daemon bin sys sync games man lp mail news uucp proxy www-data backup list irc gnats nobody systemd-network systemd-resolve systemd-timesync messagebus syslog _apt tss uuidd tcpdump avahi-autoipd usbmux rtkit dnsmasq cups-pk-helper speech-dispatcher avahi kernoops saned nm-openvpn hplip whoopsie colord geoclue pulse gnome-initial-setup gdm calvin systemd-coredump fwupd-refresh systemd-oom sssd sddm cups-browsed _flatpak swtpm libvirt-qemu libvirt-dnsmasq stuff _rpc statd school robot sshd</pre>
+</div>
+<div class="box">
+    <h1>IP</h1>
+    <pre>1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: wlo1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether f4:b3:01:00:8b:42 brd ff:ff:ff:ff:ff:ff
+    altname wlp0s20f3
+    inet 192.168.50.32/24 brd 192.168.50.255 scope global dynamic noprefixroute wlo1
+       valid_lft 84903sec preferred_lft 84903sec
+    inet6 fe80::eab7:30f1:4878:1694/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 52:54:00:e1:f0:f0 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0
+       valid_lft forever preferred_lft forever
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:2e:90:11:7a brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever</pre>
+</div>

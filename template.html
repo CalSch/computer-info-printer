@@ -1,0 +1,73 @@
+<style>
+    * {
+        overflow-x: hidden;
+        word-wrap: anywhere;
+        border-spacing: 0;
+    }
+    body {
+        font-size: 9pt;
+        font-family: monospace;
+        width: 384px;
+    }
+    div.box {
+        border: 1px solid black;
+        margin-bottom: 5px;
+        padding: 2px;
+    }
+    pre {
+        white-space: pre-wrap;       /* css-3 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        margin: 0;
+    }
+    h1 {
+        margin: 0;
+    }
+    td, th {
+        font-size: 9pt;
+        border: 1px solid black;
+        border-top: none;
+        border-left: none;
+        margin: 0;
+    }
+    th {
+        padding: 0 2px 0 2px;
+        background-color: #eee;
+    }
+    h1.center {
+        width: 100%;
+        text-align: center;
+    }
+</style>
+<h1 class="center">Computer Info Report</h1>
+<hr>
+<div class="box">
+    <h1>uname -a</h1>
+    <pre>{{uname}}</pre>
+</div>
+<div class="box">
+    <h1>Disks</h1>
+    {{disks}}
+</div>
+<div class="box">
+    <h1>RAM</h1>
+    <pre>{{ram}}</pre>
+</div>
+<div class="box">
+    <h1>CPUs</h1>
+    <pre>{{cpu}}</pre>
+</div>
+<div class="box">
+    <h1>USBs</h1>
+    <pre>{{usb}}</pre>
+</div>
+<div class="box">
+    <h1>Users</h1>
+    <pre>{{users}}</pre>
+</div>
+<div class="box">
+    <h1>IP</h1>
+    <pre>{{ip}}</pre>
+</div>
